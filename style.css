@@ -243,27 +243,68 @@ a:hover {
   color: var(--color-fg-muted);
 }
 
-.profile-achievements {
+.profile-section {
   border-top: 1px solid var(--color-border-muted);
   padding-top: 16px;
+}
+
+.profile-section + .profile-section {
+  margin-top: 16px;
 }
 
 .sidebar-heading {
   font-size: 16px;
   font-weight: 600;
   color: var(--color-fg-default);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-.achievements-list {
+/* Work experience / education entries */
+.experience-list {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.achievement img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+.experience-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.company-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background-color: #fff;
+  object-fit: contain;
+}
+
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.company-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-fg-default);
+  line-height: 1.3;
+}
+
+.team-name {
+  font-size: 12px;
+  color: var(--color-accent-fg);
+  line-height: 1.3;
+}
+
+.experience-meta {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  line-height: 1.3;
 }
 
 /* Content area */
@@ -443,6 +484,45 @@ a:hover {
   color: var(--color-fg-subtle);
   font-size: 11px;
   margin-left: auto;
+}
+
+/* Published Works */
+.published-works-section {
+  margin-top: 24px;
+  scroll-margin-top: 80px;
+}
+
+.pub-card {
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  padding: 16px;
+  background-color: var(--color-canvas-subtle);
+}
+
+.pub-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent-fg);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.pub-title:hover {
+  text-decoration: underline;
+}
+
+.pub-authors {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.pub-venue {
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+  font-style: italic;
 }
 
 /* Footer */
