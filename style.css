@@ -313,12 +313,6 @@ a:hover {
   line-height: 1.3;
 }
 
-.experience-link {
-  font-size: 12px;
-  color: var(--color-accent-fg);
-  line-height: 1.3;
-}
-
 /* Skills */
 .skills-group {
   margin-bottom: 10px;
@@ -394,17 +388,6 @@ a:hover {
   border-bottom-color: #f78166;
 }
 
-.tab-counter {
-  display: inline-block;
-  padding: 0 6px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  color: var(--color-fg-default);
-  background-color: rgba(110, 118, 129, 0.4);
-  border-radius: 10px;
-}
-
 /* Pages section */
 .pages-section {
   margin-top: 8px;
@@ -422,7 +405,7 @@ a:hover {
 
 .pages-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
 }
 
