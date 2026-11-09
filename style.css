@@ -529,41 +529,6 @@ a:hover {
   border-color: var(--color-accent-fg);
 }
 
-.page-card-preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 160px;
-  background: linear-gradient(135deg, var(--color-preview-a) 0%, var(--color-preview-b) 50%, var(--color-preview-a) 100%);
-  border-bottom: 1px solid var(--color-border-default);
-  position: relative;
-  overflow: hidden;
-}
-
-.page-card-preview::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, var(--color-glow-a) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 50%, var(--color-glow-b) 0%, transparent 50%);
-}
-
-.page-card-icon {
-  position: relative;
-  z-index: 1;
-  opacity: 0.6;
-  transition: opacity 0.2s;
-}
-
-.page-card:hover .page-card-icon,
-.page-card:focus-within .page-card-icon {
-  opacity: 1;
-}
-
 .page-card-body {
   padding: 16px;
 }
